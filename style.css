@@ -29,6 +29,10 @@ main .section {
   align-items: center;
 }
 
+.grid {
+  display: grid;
+}
+
 .description {
   color: rgba(255, 255, 255, 0.5);
   font-size: 1rem;
@@ -143,8 +147,8 @@ nav ul li {
 }
 
 #banner-img .absolute-top {
-  top: 8rem;
-  right: -3rem;
+  top: 10rem;
+  right: 0;
 }
 
 #banner-img .absolute-top h2 {
@@ -174,7 +178,7 @@ nav ul li {
 #habits {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+  gap: 1.7rem;
   margin-top: 20px;
 }
 
@@ -182,7 +186,7 @@ nav ul li {
   padding: 0 30px;
 }
 
-.habit h4{
+.habit h4 {
   margin: 1.5rem auto 0.4rem;
   font-size: 1.1rem;
   font-weight: 600;
@@ -190,4 +194,26 @@ nav ul li {
 #habits figure img {
   border-radius: 50%;
   width: 100%;
+}
+
+/* Run Extra Mile Section */
+
+#run-extra-mile {
+  background: rgb(34, 34, 34);
+  padding: 2rem 2rem 2rem 4rem;
+  border-radius: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  align-items: center;
+}
+
+#runner-text p {
+  margin: 1rem 0 2.1rem;
+  max-width: 450px;
+}
+
+#runner img {
+  border-radius: 1.1rem;
+  width: 100%;
+  object-fit: contain;
 }
