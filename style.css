@@ -19,6 +19,10 @@ body {
 
 /* Shared CSS */
 
+main .section {
+  margin-top: 100px;
+}
+
 .center {
   display: flex;
   justify-content: center;
@@ -50,6 +54,11 @@ body {
   background: rgba(255, 255, 255, 0.214);
   padding: 15px 20px;
   cursor: pointer;
+}
+
+.section-title {
+  font-size: 2.7rem;
+  font-weight: 900;
 }
 
 /* Header section */
@@ -135,7 +144,7 @@ nav ul li {
 
 #banner-img .absolute-top {
   top: 8rem;
-  right: -5rem;
+  right: -3rem;
 }
 
 #banner-img .absolute-top h2 {
@@ -143,12 +152,42 @@ nav ul li {
   font-weight: 900;
 }
 
-#banner-img .absolute-bottom{
+#banner-img .absolute-bottom {
   bottom: 5rem;
   left: -3rem;
 }
 
-#banner-img .absolute-bottom h4{
+#banner-img .absolute-bottom h4 {
   font-size: 1.8rem;
   font-weight: 900;
+}
+
+/* Change your habits section */
+#change-habits {
+  text-align: center;
+}
+
+#section-desc {
+  margin: 15px auto 50px;
+}
+
+#habits {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.habit {
+  padding: 0 30px;
+}
+
+.habit h4{
+  margin: 1.5rem auto 0.4rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+#habits figure img {
+  border-radius: 50%;
+  width: 100%;
 }
