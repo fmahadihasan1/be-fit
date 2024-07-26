@@ -12,14 +12,17 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 1rem;
   font-weight: 400;
-  max-width: 1420px;
-  margin: auto;
   min-height: 100vh;
 }
 
 /* Shared CSS */
+main {
+  max-width: 1420px;
+  margin: auto;
+}
 
-main .section {
+main .section,
+footer {
   margin-top: 100px;
 }
 
@@ -81,7 +84,8 @@ header nav {
   margin-top: 50px;
 }
 
-nav > h3 {
+nav > h3,
+footer h1 {
   font-size: 3.5rem;
   color: rgb(230, 83, 60);
   font-style: italic;
@@ -254,4 +258,49 @@ nav ul li {
   left: 1rem;
   background: none;
   border: none;
+}
+
+/* Footer Section */
+footer {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.footer {
+  max-width: 1420px;
+  margin: auto;
+  padding: 4rem 0;
+  grid-template-columns: 2fr 1fr 1fr;
+}
+
+footer h1 {
+  font-size: 4rem;
+  margin-bottom: 1.2rem;
+}
+
+.footer .description{
+  max-width: 30rem;
+}
+
+.footer-title{
+  font-size: 2rem;
+}
+
+.footer-anchors {
+  list-style-type: none;
+}
+
+.footer-anchors li {
+  margin-top: 0.3rem;
+  cursor: pointer;
+}
+
+footer hr{
+  max-width: 1420px;
+  margin: 2rem auto;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+footer #footer-small-text{
+  text-align: center;
+  padding-bottom: 1rem;
 }
