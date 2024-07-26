@@ -217,3 +217,41 @@ nav ul li {
   width: 100%;
   object-fit: contain;
 }
+
+/* Meet Our Team Section */
+#our-team-title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+#our-team-title p {
+  margin-top: 1rem;
+}
+
+#team-members {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 1.2rem;
+}
+
+#team-members figure {
+  position: relative;
+  height: 25rem;
+  gap: 30px;
+}
+
+#team-members figure img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1.2rem;
+}
+
+.trainer {
+  bottom: 0.5rem;
+  left: 1rem;
+  background: none;
+  border: none;
+}
