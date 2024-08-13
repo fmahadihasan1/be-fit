@@ -16,7 +16,7 @@ body {
 }
 
 /* Shared CSS */
-main {
+main .section {
   max-width: 1420px;
   margin: auto;
 }
@@ -34,6 +34,13 @@ footer {
 
 .grid {
   display: grid;
+}
+
+table,
+th,
+td {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-collapse: collapse;
 }
 
 .description {
@@ -66,6 +73,11 @@ footer {
 .section-title {
   font-size: 2.7rem;
   font-weight: 900;
+}
+.section-subtitle {
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: center;
 }
 
 /* Header section */
@@ -219,8 +231,58 @@ nav ul li {
 #runner img {
   border-radius: 1.1rem;
   width: 100%;
-  object-fit: contain;
+  object-fit: none;
+  object-position: 70% 30%;
 }
+
+/* Bmi Calculator Section */
+
+#bmi-calculator > section > div {
+  padding: 2rem;
+}
+
+td,
+th {
+  border: 1px solid;
+  width: 15rem;
+  padding: 0.8rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+#bmi-calculator > section {
+  margin-top: 100px;
+  background: rgb(34, 34, 34);
+  justify-content: start;
+  align-items: start;
+}
+
+#bmi-calculator section form > div {
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: .6rem;
+  margin: 2rem 0;
+}
+
+#last-grid-item {
+  grid-column: span 2;
+}
+
+#bmi-calculator input, select{
+  padding: .9rem .9rem;
+  color: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+  border: 0;
+  border-radius: .3rem;
+  font-weight: 600;
+  font-size: 1rem;
+}
+#bmi-calculator option{
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+
 
 /* Meet Our Team Section */
 #our-team-title {
@@ -277,11 +339,11 @@ footer h1 {
   margin-bottom: 1.2rem;
 }
 
-.footer .description{
+.footer .description {
   max-width: 30rem;
 }
 
-.footer-title{
+.footer-title {
   font-size: 2rem;
 }
 
@@ -294,13 +356,13 @@ footer h1 {
   cursor: pointer;
 }
 
-footer hr{
+footer hr {
   max-width: 1420px;
   margin: 2rem auto;
   border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
-footer #footer-small-text{
+footer #footer-small-text {
   text-align: center;
   padding-bottom: 1rem;
 }
