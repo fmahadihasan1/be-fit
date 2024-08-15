@@ -31,9 +31,32 @@
   #runner img {
     object-fit: cover;
   }
-  input {
-    display: inline;
+  
+  #run-extra-mile, #change-habits, #our-team{
+    padding: 1rem;
   }
+  
+  .bmi-calculator-container{
+    height: fit-content;
+    
+  }
+  .bmi-calculator{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .chart{
+    margin: 50px 0;
+  }
+
+  form div input, form div select, form div select option{
+    padding: .5rem;
+    font-size: .7rem;
+  }
+
   #banner-text {
     width: 100%;
   }
