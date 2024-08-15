@@ -112,7 +112,7 @@
             Run an Extra <br />
             Mile Easily
           </h1>
-          <p class="description" >
+          <p class="description">
             We believe fitness should be accessible to everyone, everywhere,
             regardless of income or access to a gym. With hundreds of
             professional workouts.
@@ -131,16 +131,24 @@
 
       <!-- BMI Calculator Section -->
 
-      <section class="" style="max-width: 40rem; margin: auto; margin-top: 100px; padding: 1rem;">
+      <section
+        class=""
+        style="max-width: 40rem; margin: auto; margin-top: 100px; padding: 1rem"
+      >
         <h2 class="section-title">BMI Calculator</h2>
-        <p class="description">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+        <p class="description">
+          We believe fitness should be accessible to everyone, everywhere,
+          regardless of income or access to a gym.
+        </p>
       </section>
 
       <section class="bmi-calculator-container">
         <section class="section bmi-calculator center flex-d-column">
           <div class="center mw1">
             <div class="chart">
-              <h3 class="section-subtitle" style="text-align: center;">BMI Calculator Chart</h3>
+              <h3 class="section-subtitle" style="text-align: center">
+                BMI Calculator Chart
+              </h3>
               <table>
                 <tr>
                   <th>BMI</th>
@@ -166,17 +174,22 @@
             </div>
           </div>
           <div class="form">
-            <h3 class="section-subtitle" style="text-align: left;">Calculate Your BMI</h3>
-            <p class="description" style="max-width: 35rem; text-align: justify;">
+            <h3 class="section-subtitle" style="text-align: left">
+              Calculate Your BMI
+            </h3>
+            <p
+              class="description"
+              style="max-width: 35rem; text-align: justify"
+            >
               We believe fitness should be accessible to everyone, everywhere,
               regarless of income or access to a gym.
             </p>
 
             <form>
               <div class="grid">
-                <input type="number" placeholder="Height/cm" />
-                <input type="number" placeholder="Weight/kg" />
-                <input type="number" placeholder="Age" />
+                <input type="number" placeholder="Height/cm" required/>
+                <input type="number" placeholder="Weight/kg" required />
+                <input type="number" placeholder="Age" required />
                 <select name="sex">
                   <option value="placeholder" selected disabled>Sex</option>
                   <option value="male">Male</option>
@@ -264,6 +277,28 @@
             </figure>
           </div>
         </section>
+      </section>
+
+      <!-- Newsletter Section -->
+      <section class="section center newsletter">
+        <form class="">
+          <h2 class="section-title">
+            Wanna Be Updated with our special Tips?
+            <br />
+            Please subscribe here
+          </h2>
+
+          <div class="subscribe-box">
+            <input
+              type="email"
+              name=""
+              id=""
+              placeholder="Your Email Here"
+              required
+            />
+            <button class="btn subscribe">Subscribe</button>
+          </div>
+        </form>
       </section>
     </main>
 

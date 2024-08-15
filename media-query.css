@@ -1,4 +1,9 @@
 @media screen and (max-width: 576px) {
+  
+  .btn{
+    font-size: 1rem;
+  }
+
   nav > ul {
     display: none;
   }
@@ -31,16 +36,19 @@
   #runner img {
     object-fit: cover;
   }
-  
-  #run-extra-mile, #change-habits, #our-team{
+
+  #run-extra-mile,
+  #change-habits,
+  #our-team,
+  .newsletter {
     padding: 1rem;
   }
-  
-  .bmi-calculator-container{
+
+  .bmi-calculator-container {
     height: fit-content;
-    
+    padding-bottom: 1.5rem;
   }
-  .bmi-calculator{
+  .bmi-calculator {
     width: 90%;
     margin: auto;
     display: flex;
@@ -48,13 +56,15 @@
     padding: 0;
   }
 
-  .chart{
+  .chart {
     margin: 50px 0;
   }
 
-  form div input, form div select, form div select option{
-    padding: .5rem;
-    font-size: .7rem;
+  .bmi-calculator form div input,
+  .bmi-calculator form div select,
+  .bmi-calculator form div select option {
+    padding: 0.5rem;
+    font-size: 0.7rem;
   }
 
   #banner-text {
@@ -77,6 +87,20 @@
     left: 0rem;
     height: 5rem;
   }
+
+  .newsletter h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
+
+  .subscribe-box input, .subscribe-box .subscribe{
+    font-size: 1rem;
+  }
+
+  .subscribe-box{
+    margin: 1.5rem auto;
+  }
+
   .footer {
     padding: 2rem 1.2rem;
     grid-gap: 1rem;
